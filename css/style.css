@@ -1,0 +1,359 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color: #999;
+}
+.main-color{
+    color: var(--main-color);
+}
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1140px;
+    }
+}
+
+nav li{
+    position: relative;
+
+}
+.font-text-nav{
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: .125rem;
+    padding-top: .3125rem;
+}
+nav li::after{
+    content: "";
+    width: 85%;
+    height: .125rem;
+    background-color: black ;
+    position: absolute;
+    bottom: 8px;
+    left: 5px;
+    transform: scaleX(0);
+    transition: all 0.5s;
+    transform-origin: left;
+} 
+nav li:hover::after{
+    transform: scaleX(100%);
+}
+nav .nav-link{
+    font-size: .875rem;
+}
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6) ), url(../imgs/bg.jpg);
+    background-position: left center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+#home .header-i .header-icons{
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.header-text-mover h4{
+    font-size: 4.375rem;
+}
+
+
+@media (max-width: 768px) {
+    .header-text-mover h4{
+        font-size: 30px;
+    }
+}
+#home .headr-text h3{
+    font-size: 3.125rem;
+}
+.header-text-mover h4::after{
+    content: " |";
+    animation-name: typing;
+    font-weight: bolder;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes typing {
+    0%{content: " l| ";}
+    1%{content: " la| ";}
+    2%{content: " lar| ";}
+    3%{content: " larr| ";}
+    4%{content: " larry| ";}
+    5%{content: " | ";}
+    6%{content: " larry D| ";}
+    7%{content: " larry Da| ";}
+    8%{content: " larry Dan| ";}
+    9%{content: " larry Dani| ";}
+    10%{content: " larry Danie| ";}
+    11%{content: " larry Daniel| ";}
+    12%{content: " larry Daniels| ";}
+    13%{content: " | ";}
+    14%{content: " larry Daniel| ";}
+    15%{content: " larry Danie| ";}
+    16%{content: " larry Danie| ";}
+    17%{content: " larry Dani| ";}
+    18%{content: " larry Dan| ";}
+    19%{content: " larry Da| ";}
+    20%{content: " larry D| ";}
+    21%{content: " larry | ";}
+    22%{content: " larry| ";}
+    23%{content: " larr| ";}
+    24%{content: " lar| ";}
+    25%{content: " la| ";}
+    26%{content: " l| ";}
+    27%{content: " | ";}
+    28%{content: " D| ";}
+    29%{content: " De| ";}
+    30%{content: " Dev| ";}
+    31%{content: " Deve| ";}
+    32%{content: " Devel| ";}
+    33%{content: " Develo| ";}
+    34%{content: " Develop| ";}
+    35%{content: " Develope| ";}
+    36%{content: " Developer| ";}
+    37%{content: " | ";}
+    38%{content: " Develope| ";}
+    39%{content: " Develop| ";}
+    40%{content: " Develo| ";}
+    41%{content: " Devel| ";}
+    42%{content: " Deve| ";}
+    43%{content: " Dev| ";}
+    44%{content: " De| ";}
+    45%{content: " D| ";}
+    46%{content: " | ";}
+    47%{content: " D| ";}
+    48%{content: " De| ";}
+    49%{content: " Des| ";}
+    50%{content: " Desi| ";}
+    51%{content: " Desin| ";}
+    52%{content: " Desing| ";}
+    53%{content: " Desinge| ";}
+    54%{content: " Desinger| ";}
+    55%{content: " | ";}
+    56%{content: " Desinge| ";}
+    57%{content: " Desing| ";}
+    58%{content: " Desin| ";}
+    59%{content: " Desi| ";}
+    60%{content: " Des| ";}
+    61%{content: " De| ";}
+    62%{content: " D| ";}
+    63%{content: " | ";}
+} 
+#about .about-img .layer{
+    background: url(../imgs/dots.png), rgb(255, 255, 255) ;
+    width: 80%;
+    height: 78%;
+    background-repeat: repeat;
+    position: absolute;
+    right: 20%;
+    top: 22%;
+}
+#about .about-text h3{
+    font-weight: 800;
+}
+.progress{
+    height: 1.5625rem;
+}
+.progress-bar{
+    height: 100%;
+}
+.btn{
+    font-size: .75rem;
+}
+.btn-dark:hover{
+    background-color: white;
+    color: black;
+}
+
+#services .services-layer{
+    background: url(../imgs/dots.png), rgb(255, 255, 255) ;
+    width: fit-content;
+    background-repeat: repeat;
+}
+#services .services-layer h2{
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+#services .services-icon-circle{
+    width: 5rem;
+    height: 5rem;
+    transition: all 0.6s;
+}
+#services .services-card:hover .services-icon-circle{
+    background-color: black !important;
+    color: white;
+}
+
+
+
+
+#works .works-layer-head{
+    background: url(../imgs/dots.png), rgb(255, 255, 255) ;
+    width: fit-content;
+    background-repeat: repeat;
+}
+#works .works-layer-head h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+#works .works-layer{
+    width: 97%;
+    height: 97%;
+    background-color: white;
+    position: absolute;
+    top: 1.5%;
+    left: 1.5%;
+    opacity: 0;
+    transition: all 0.5s;
+
+}   
+#works .works-image:hover .works-layer{
+    opacity: 1;
+}
+#works .work-layer-icon{
+    width: 19%;
+}
+#works .work-layer-icon-circle{
+    width: 1.875rem;
+    height: 1.875rem;
+    border: .0625rem solid black;
+    background-color: black;
+    color: white;
+}
+#works .work-layer-icon-circle:hover{
+    color: black;
+    background-color: white; 
+}
+#clients .clients-layer-head{
+    background: url(../imgs/dots.png), rgb(255, 255, 255) ;
+    width: fit-content;
+    background-repeat: repeat;
+}
+#clients .clients-layer-head h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+#clients .carousel-item img{
+    width: 6.25rem;
+    height: 6.25rem;
+}
+#clients .carousel-item span{
+    font-size: .75rem;
+}
+#clients .carousel-indicators button{
+    padding: .3125rem;
+    width: .0625rem;
+    background-color: var(--main-color);
+    height: .0625rem;
+    border-radius:50% ;
+}
+#clients .carousel-indicators button:hover{
+    background-color: var(--main-color);
+}
+.statistic h6{
+    font-weight: 800;
+}
+.statistic p{
+    font-size: .875rem;
+}
+
+
+
+
+#team .team-layer-head{
+    background: url(../imgs/dots.png), rgb(255, 255, 255) ;
+    width: fit-content;
+    background-repeat: repeat;
+}
+#team .team-layer-head h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+#team .team-card-text{
+    background-color: rgb(91, 91, 91);
+    font-size: 100px;
+}
+#team .team-card{
+    position: relative;
+    overflow: hidden;
+}
+#team .team-card-layer{
+    width: 97%;
+    height: 97%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+    transition: all 0.6s;
+
+}
+#team .team-card:hover .team-card-layer{
+    opacity: 1;
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+#team .team-card:hover img{
+    transform: scale(1.2);
+}
+#team .team-card img{
+    transition: all 0.5s;
+}
+#team .team-card-layer-icons{
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: black;
+    transform: rotateY(180deg);
+    border: 1px solid black;
+}
+#team .team-card-layer-icons:hover{
+    background-color: white;
+    color: black !important;
+
+}
+#contact .contact-layer{
+    background: url(../imgs/dots.png), rgb(255, 255, 255) ;
+    width: fit-content;
+    background-repeat: repeat;
+}
+#contact .contact-layer h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+#contact .contacts-card-icon{
+    width: 3.75rem;
+    height: 3.75rem;
+    transition: all 0.3s;
+}
+#contact .contacts-card:hover .contacts-card-icon{
+    background-color: black !important;
+    color: white;
+}
+#contact input{
+    width: 100%;
+    border: none;
+    height: 2.5rem;
+    font-size: .875rem;
+
+}
+#contact textarea{
+    width: 97.5%;
+    border: none;
+    height: 9.375rem;
+    font-size: .875rem;
+}
+footer{
+    background-color: #1C1C1C;
+}
+footer p{
+    font-size: 13px;
+    word-spacing: 2px;
+    color: rgb(116, 129, 130);
+}
