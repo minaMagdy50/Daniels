@@ -66,11 +66,26 @@ header{
     .header-text-mover h4{
         font-size: 30px;
     }
+    nav li::after{
+        content: "";
+        width: 85%;
+        height: .125rem;
+        background-color: black ;
+        position: absolute;
+        bottom: 8px;
+        left: 0px;
+        transform: scaleX(0);
+        transition: all 0.5s;
+        transform-origin: left;
+    } 
+    nav li:hover::after{
+        transform: scaleX(10%);
+    }
 }
 #home .headr-text h3{
     font-size: 3.125rem;
 }
-.header-text-mover h4::after{
+/* .header-text-mover h4::after{
     content: " |";
     animation-name: typing;
     font-weight: bolder;
@@ -144,7 +159,7 @@ header{
     61%{content: " De| ";}
     62%{content: " D| ";}
     63%{content: " | ";}
-} 
+}  */
 #about .about-img .layer{
     background: url(../imgs/dots.png), rgb(255, 255, 255) ;
     width: 80%;
@@ -357,3 +372,4 @@ footer p{
     word-spacing: 2px;
     color: rgb(116, 129, 130);
 }
+
